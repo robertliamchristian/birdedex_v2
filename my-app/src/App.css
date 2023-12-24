@@ -1,0 +1,285 @@
+.App {
+  background-color: #3D437E;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.main {
+  width: 95%;
+  min-height: 60vh;
+  margin: 0 auto;
+  background-color: #3D437E;
+  
+}
+
+.main-content {
+  width: 290px;
+  min-height: 60vh;
+  margin: 0 auto;
+  background-color: #3D437E;
+}
+
+.card {
+  background-color: #F5EDDF;
+  width: 265px;
+  margin: 0 auto;
+  padding-top: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.top-card {
+  background-color: #E8A3BE;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  
+}
+
+.enter-bird {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  height: 100%;
+
+}
+
+.add-bird-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bird-form input {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 13pt;
+  padding-bottom: 0px;
+}
+
+.bird-form input {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  background-color: transparent;
+}
+
+.bird-form button {
+  background-color: #F50348;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 7pt;
+  font-weight: bold;
+  height: 25px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slist {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1; 
+  color: white;
+  background-color: #E8A3BE;
+  margin-top: 85px;
+  left: 0;
+  padding-bottom: 0;
+  max-height: 235px;
+  
+}
+
+.slist ul {
+  list-style-type: none; /* Removes bullets */
+  padding-left: 5px; /* Removes default padding */
+  margin-top: 50px;
+  background-color: #e383a8;
+  
+}
+
+.slist ul li {
+  padding: 3px 0;
+  color: #000557;
+  font-size: 9pt; /* Slightly smaller font size */
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+
+
+ .ul li::marker {
+    display: none; /* Hides the marker */
+}
+
+
+.bottom-card {
+  position: relative; 
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.bird-list {
+  counter-reset: bird-list-counter;
+  margin-left: -20px;
+  margin-top: 38px;
+}
+
+.bird-list ol {
+  list-style-type: none;
+  font-size: 9pt;
+}
+
+.bird-list li {
+  padding: 3px 0;
+  color: #000557;
+}
+
+.bird-list li::before {
+  counter-increment: bird-list-counter;
+  content: counter(bird-list-counter, decimal-leading-zero);
+  text-align: left;
+  display: inline-block;
+  width: 35px;
+  color: #000557;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  max-height: 50px;
+}
+
+.logo {
+  text-align: left;
+  
+}
+
+.logo h3 {
+  margin: 0; 
+  margin-top: 3px;
+  padding: 0; 
+  color: white;
+  text-align: left; 
+  margin-left: 20px;
+
+}
+
+.loggedin {
+  text-align: right;
+}
+
+.loggedin p {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  color: white;
+  text-align: 20px;
+  margin-right: 20px;
+  font-size: 9pt;
+}
+
+
+
+/* For Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Make the track (background) transparent */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the slider */
+  border-radius: 6px; /* Roundness of the slider */
+}
+
+/* When hovering over the scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the slider when hovered */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Width of the scrollbar */
+  scrollbar-color: #888 transparent; /* Color of the slider and track */
+}
+
+.dropdown {
+  display: flex;
+  min-height: 50px;
+  max-height: 280px;
+  margin-top: 85px;
+  width: 100%;
+  z-index: 1;
+  margin-left: 0px;
+  overflow-y: auto;
+  justify-content: space-between;
+  position: absolute;
+  background-color: #E8A3BE;
+  
+}
+
+.dropdown button {
+  background-color: #E8A3BE;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 7pt;
+  font-weight: bold;
+  height: 25px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -7px;
+  
+}
+
+.IDbirdtext {
+  appearance: none;
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 12px;
+  width: 150px;
+  height: 25px;
+  color: #333;
+  
+}
+
+
+.viewlists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  padding: 15px;
+}
+
